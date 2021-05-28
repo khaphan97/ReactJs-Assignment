@@ -1,0 +1,33 @@
+@import '../../assets/css/_base.scss';
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background: black;
+
+    .container {
+        padding: 10px;
+
+        .header-logo {
+            max-width: 150px;
+        }
+
+        .header-nav {
+            @include alignCenter();
+        }
+        .header-user {
+            @include alignCenter();
+
+            .nav-link-custom {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
